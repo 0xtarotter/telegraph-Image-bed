@@ -44,8 +44,7 @@ async function handleRequest(context) {
 
             if (rating) {
                 if (rating.rating == 3) {
-                    const currentDomain = new URL(request.url).hostname;
-                    return Response.redirect("http://${currentDomain}/asset/image/blocked.png", 302);
+                    return Response.redirect("https://imgbeds.pages.dev/asset/image/blocked.png", 302);
                 } else {
                     return res_img;
                 }
@@ -55,8 +54,7 @@ async function handleRequest(context) {
                     const rating_index = rating.rating ? rating.rating : rating.rating_index
                     await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, rating_index, 1, formattedDate);
                     if (rating.rating == 3) {
-                         const currentDomain = new URL(request.url).hostname;
-                        return Response.redirect("http://${currentDomain}/asset/image/blocked.png", 302);
+                        return Response.redirect("https://imgbeds.pages.dev/asset/image/blocked.png", 302);
                     } else {
                         return res_img;
                     }
