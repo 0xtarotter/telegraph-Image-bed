@@ -44,7 +44,7 @@ async function handleRequest(context) {
 
             if (rating) {
                 if (rating.rating == 3) {
-                    return Response.redirect("https://s2.loli.net/2024/07/16/AIvfY4CT7UExKhZ.png", 302);
+                    return Response.redirect("http://127.0.0.1/asset/image/blocked.png", 302);
                 } else {
                     return res_img;
                 }
@@ -54,7 +54,7 @@ async function handleRequest(context) {
                     const rating_index = rating.rating ? rating.rating : rating.rating_index
                     await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, rating_index, 1, formattedDate);
                     if (rating.rating == 3) {
-                        return Response.redirect("https://s2.loli.net/2024/07/16/AIvfY4CT7UExKhZ.png", 302);
+                        return Response.redirect("http://127.0.0.1/asset/image/blocked.png", 302);
                     } else {
                         return res_img;
                     }
