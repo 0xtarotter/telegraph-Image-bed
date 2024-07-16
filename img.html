@@ -8,10 +8,8 @@
     <title>Upload</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://img.131213.xyz/asset/css/notifyme.css" rel="stylesheet">
-    <link href="https://img.131213.xyz/asset/css/style.css" rel="stylesheet">
-    <!-- <link href="/asset/css/notifyme.css" rel="stylesheet">
-    <link href="/asset/css/style.css" rel="stylesheet"> -->
+    <link href="/asset/css/notifyme.css" rel="stylesheet">
+    <link href="/asset/css/style.css" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JVKEXR5XSG"></script>
     <script>
@@ -46,8 +44,18 @@
     </nav>
     <div class="container kv-main">
         <div class="page-header">
-            <h1>文件上传</h1>&nbsp;每次最多&nbsp;100&nbsp;个文件。
-            你访问本站的IP是：<span class="total" id="ipinfo"></span>&nbsp;
+            <h2>
+            <sup style="font-size:20px;">
+            👋
+        </sup>Select image or video to upload</h2>
+            <br>
+            <a style="font-size:14px;color:#c9c9c9;">
+            Maximum of&nbsp;100&nbsp;files at a time.
+            <br>
+            &nbsp;Hosted &nbsp;<span class="total" id="total"></span>&nbsp; picture.
+            <br>
+            &nbsp;Your real IP has been recorded <span class="total" id="ipinfo"></span>&nbsp,Please follow the platform <a href="/about">Policy</a>.
+            </a>
 
         </div>
         <form enctype="multipart/form-data">
@@ -125,9 +133,14 @@
 
     <footer class="footer">
         <div class="container text-center">
-            <p class="text-muted">Copyright Ⓒ 2023 All rights reserved. 请勿上传违反中国法律的图片，违者后果自负。
-                本程序基于Telegraph，开源于GitHub <a href="https://github.com/x-dr/telegraph-Image"
-                    target="_blank">telegraph-Image</a></p>
+            <p class="text-muted">
+                
+<center>
+     <a href="https://39mi.com" target="_blank" style="text-decoration:none;"> <img src="data:image/svg+xml;base64,PHN2ZyBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNDUiIGhlaWdodD0iNDUiPjxwYXRoIGQ9Ik01MTEuMTI1IDYzLjU2MmMyNDcuMDA3IDAgNDQ3LjI0OCAyMDAuMjQxIDQ0Ny4yNDggNDQ3LjI1IDAgMjQ3LjAxLTIwMC4yNDEgNDQ3LjI1LTQ0Ny4yNDggNDQ3LjI1LTI0Ny4wMSAwLTQ0Ny4yNTEtMjAwLjI0LTQ0Ny4yNTEtNDQ3LjI1IDAtMjQ3LjAwOSAyMDAuMjQtNDQ3LjI1IDQ0Ny4yNTEtNDQ3LjI1eiIgZmlsbD0iI0VFRSIvPjxwYXRoIGQ9Ik03MTEuNjc3IDkwNy44NzJjLTU5LjIxMyAyOC45MzYtMTI1LjczNyA0NS4yMi0xOTYuMDgxIDQ1LjIyLTg2LjcyNyAwLTE2Ny42MzUtMjQuNzYtMjM2LjE4OC02Ny40OSA3OS4yMzctMjAuNDY3IDE1NS44MjUtMTIuMjE0IDE3My4yMzQtNDguMTY2IDQwLjgxNi04MC4zMzcgMjAuNDE4LTExMC44Mi0zNi45NzQtMTIxLjE2OC03OC4wMy0yMC45NTItOTguOTcyLTU0LjgyOC04OS4xODQtMjUxLjk3OCAxOS4zMjUtMTA0LjQ0NCA0LjEtMzAzLjQxNCAyNDUuMDM2LTI2Ny40MDMgMjQ1Ljc0NyAzNi43NDYgMTcyLjIwNiAyNDYuODEgNjkuMjcyIDUwMC41NzQtNTIuODIyIDEzMC4yMzEgMjYuMDAzIDE4OC43MDYgNzAuODg1IDIxMC40MTF6IiBmaWxsPSIjRkZGIi8+PC9zdmc+" /> <br /> <img src="https://park.39mi.com/img/domainking.svg" height="auto" width="150" /> <br /> </a>
+     <a style="font-size:10px;color:#dedede;">owner</a> 
+    </center> 
+            
+            </p>
         </div>
     </footer>
     <div id="lightbox-overlay" class="lightbox-overlay">
@@ -200,13 +213,13 @@
             },
             browseClass: "btn btn-success",
             // msgPlaceholder: "选择文件",
-            browseLabel: "选择要上传的文件",
+            browseLabel: "Select files to upload",
             browseIcon: "<i class=\"fas fa-images\"></i> ",
             removeClass: "btn btn-danger",
-            // removeLabel: "清除",
+            // removeLabel: "Clear",
             uploadClass: "btn btn-info",
-            // uploadLabel: "上传",
-            dropZoneTitle: "拖拽文件到这里<br>或将屏幕截图复制并粘贴到此处<br>支持多文件同时上传…",
+            // uploadLabel: "Upload",
+            dropZoneTitle: "Drag files here<br>or copy and paste screenshots here<br>Support multiple files to be uploaded at the same time…",
             // showPreview: false
             // showPreview: false,
         })
