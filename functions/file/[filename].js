@@ -42,23 +42,50 @@ async function handleRequest(context) {
             await insertTgImgLog(env.IMG, url.pathname, Referer, clientIP, formattedDate);
             const rating = await getRating(env.IMG, url.pathname);
 
-            if (rating) {
-                if (rating.rating == 3) {
-                    return Response.redirect("https://img.8885858.xyz/asset/image/blocked.png", 302);
-                } else {
-                    return res_img;
-                }
-            } else {
-                if (ratingApi) {
-                    const rating = await getModerateContentRating(ratingApi, url.pathname);
-                    const rating_index = rating.rating ? rating.rating : rating.rating_index
-                    await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, rating_index, 1, formattedDate);
-                    if (rating.rating == 3) {
-                        return Response.redirect("https://img.8885858.xyz/asset/image/blocked.png", 302);
-                    } else {
-                        return res_img;
-                    }
+            // if (rating) {
+            //     if (rating.rating == 3) {
+            //         return Response.redirect("https://img.8885858.xyz/asset/image/blocked.png", 302);
+            //     } else {
+            //         return res_img;
+            //     }
+            // } else {
+            //     if (ratingApi) {
+            //         const rating = await getModerateContentRating(ratingApi, url.pathname);
+            //         const rating_index = rating.rating ? rating.rating : rating.rating_index
+            //         await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, rating_index, 1, formattedDate);
+            //         if (rating.rating == 3) {
+            //             return Response.redirect("https://img.8885858.xyz/asset/image/blocked.png", 302);
+            //         } else {
+            //             return res_img;
+            //         }
 
+            function getCurrentDomain() {
+    return `${window.location.protocol}//${window.location.host}`;
+}
+
+const blockedImagePath = `${getCurrentDomain()}/asset/image/blocked.png`;
+
+if (rating) {
+    if (rating.rating == 3) {
+        return Response.redirect(blockedImagePath, 302);
+    } else {
+        return res_img;
+    }
+} else {
+    if (ratingApi) {
+        const rating = await getModerateContentRating(ratingApi, url.pathname);
+        const rating_index = rating.rating ? rating.rating : rating.rating_index;
+        await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, rating_index, 1, formattedDate);
+        if (rating.rating == 3) {
+            return Response.redirect(blockedImagePath, 302);
+        } else {
+            return res_img;
+        }
+    }
+}
+
+
+            
                 } else {
                     await insertImgInfo(env.IMG, url.pathname, Referer, clientIP, 0, 1, formattedDate);
                     return res_img;
