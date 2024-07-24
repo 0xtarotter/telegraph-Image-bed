@@ -183,6 +183,23 @@
                         onclick="updateTab('markdown')">Markdown</button>
                 </li>
             </ul>
+
+            # 提示弹窗
+    <div id="toast">
+    <div class="toast-header">
+        <span>提示标题</span>
+        <button onclick="closeToast()" style="background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">&times;</button>
+    </div>
+    <div class="toast-body">
+        这是提示的内容。
+    </div>
+    <div class="toast-footer">
+<!--         <button class="close-btn" onclick="closeToast()">关闭</button> -->
+        <button class="confirm-btn" onclick="confirmToast()">确认</button>
+    </div>
+</div>
+
+            
             <div id="navTabContent" class="tab-content" style="border:none;">
                 <div class="tab-pane fade show active" id="imagedetail-panel" role="tabpanel"
                     aria-labelledby="imagedetail-tab">
@@ -218,20 +235,7 @@
         <div class="page-footer"></div>
 
     </div>
-    # 提示弹窗
-    <div id="toast">
-    <div class="toast-header">
-        <span>提示标题</span>
-        <button onclick="closeToast()" style="background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">&times;</button>
-    </div>
-    <div class="toast-body">
-        这是提示的内容。
-    </div>
-    <div class="toast-footer">
-<!--         <button class="close-btn" onclick="closeToast()">关闭</button> -->
-        <button class="confirm-btn" onclick="confirmToast()">确认</button>
-    </div>
-</div>
+    
     
 
     <footer class="footer">
