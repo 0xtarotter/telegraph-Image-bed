@@ -41,7 +41,7 @@
 
         #toast.show {
             visibility: visible;
-            animation: fadein 0.5s, fadeout 0.5s 4.5s;
+            animation: fadein 1s, fadeout 2s 4.5s;
         }
 
         @keyframes fadein {
@@ -140,11 +140,11 @@
         <button onclick="closeToast()" style="background: none; border: none; color: #fff; font-size: 20px; cursor: pointer;">&times;</button>
     </div>
     <div class="toast-body">
-         <a style="font-size:10px;">如果你发现域名被墙或你想使用自己的域名，请直接CNAME本域名。</a>
+         <a style="font-size:15px;">如果你发现域名被墙或你想使用自己的域名，请直接CNAME本域名。</a>
     </div>
     <div class="toast-footer">
-<!--         <button class="close-btn" onclick="closeToast()">关闭</button> -->
-        <button class="confirm-btn" onclick="confirmToast()">确认</button>
+        <button class="close-btn" onclick="closeToast()">好的</button>
+<!--         <button class="confirm-btn" onclick="confirmToast()">确认</button> -->
     </div>
 </div>
 
