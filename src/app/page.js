@@ -499,7 +499,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex  flex-col sm:flex-col   md:w-auto lg:flex-row xl:flex-row  2xl:flex-row  mx-auto items-center  ">
-            <span className=" text-lg sm:text-sm   md:text-sm lg:text-xl xl:text-xl  2xl:text-xl">API：</span>
+          <span className=" text-lg sm:text-sm   md:text-sm lg:text-xl xl:text-xl  2xl:text-xl">API：</span>
             <select
               value={selectedOption} // 将选择框的值绑定到状态中的 selectedOption
               onChange={handleSelectChange} // 当选择框的值发生变化时触发 handleSelectChange 函数
@@ -707,6 +707,11 @@ export default function Home() {
       )}
 
       <div className="fixed inset-x-0 bottom-0 h-[50px] bg-slate-200  w-full  flex  z-50 justify-center items-center ">
+      <center>
+        <a href="https://ip.im">
+            <img src="https://ip.im/img" alt="My IP Address" width="215" height="70" />
+          </a></center>
+        
         <Footer />
       </div>
     </main>
