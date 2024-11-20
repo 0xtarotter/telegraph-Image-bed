@@ -7,9 +7,17 @@ export default function Footer() {
         
         <p className="text-xs text-gray-500">
            
-        <a href="https://39mi.com" target="_blank" style="text-decoration:none;">
-          <img src="https://park.39mi.com/img/by.png" />
-          </a>
+<div style={{
+      display: 'flex', 
+      justifyContent: 'center', 
+      alignItems: 'center', 
+      height: '100vh', 
+      margin: 0
+    }}>
+      <a href="https://39mi.com" target="_blank" style={{ textDecoration: 'none' }}>
+        <img src="https://park.39mi.com/img/by.png" alt="Logo" />
+      </a>
+    </div>
 
 
 
