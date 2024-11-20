@@ -9,8 +9,8 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "公益图床",
-  description: "公益图床",
+  title: "Free Picture bed",
+  description: "Free Picture bed",
 };
 
 
