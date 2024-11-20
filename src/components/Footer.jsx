@@ -8,12 +8,8 @@ export default function Footer() {
            
 
         <a href="https://ip.im"><img src="https://ip.im/img" alt="My IP Address" width="215" height="70" /></a>
-        <p> <a href="https://39mi.com" target="_blank" style="text-decoration:none;">
-          <img src="https://park.39mi.com/img/tx.svg">
-          
-            <img src="https://park.39mi.com/img/domainking.svg" height="auto" width="150">
-            </a></p>
-         <p><a style="font-size:10px;color:#dedede;">owner</a> </p>
+        <a href="https://39mi.com" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; font-size:10px; color:#dedede;"> <img src="https://park.39mi.com/img/domainking.svg" style="margin-right:10px;"> <img src="https://park.39mi.com/img/tx.svg" height="auto" width="150" style="margin-right:10px;"> owner </a>
+
 
           
         </p>
