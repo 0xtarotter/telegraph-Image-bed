@@ -6,13 +6,6 @@ export default function Footer() {
       <div >
        
 
-        <Image
-          src="https://park.39mi.com/img/by.svg"
-          alt="Logo"
-          width={150}
-          height={auto} // Next.js的Image组件不会直接支持auto，通常你可以使用固定宽度或者高宽比。
-          layout="intrinsic" // 可选，适应图片的原始宽高比
-        />
 
 
 
