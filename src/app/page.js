@@ -156,7 +156,7 @@ export default function Home() {
     const filesToUpload = file ? [file] : selectedFiles;
 
     if (filesToUpload.length === 0) {
-      toast.error('请选择要上传的文件');
+      toast.error('Please select the file to upload');
       setUploading(false);
       return;
     }
@@ -197,44 +197,44 @@ export default function Home() {
             let errorMsg;
             try {
               const errorData = await response.json();
-              errorMsg = errorData.message || `上传 ${file.name} 图片时出错`;
+              errorMsg = errorData.message || `Error uploading image ${file.name}`;
             } catch (jsonError) {
               // 如果解析 JSON 失败，使用默认错误信息
-              errorMsg = `上传 ${file.name} 图片时发生未知错误`;
+              errorMsg = `An unknown error occurred while uploading the image ${file.name}`;
             }
 
             // 细化状态码处理
             switch (response.status) {
               case 400:
-                toast.error(`请求无效: ${errorMsg}`);
+                toast.error(`Invalid request: ${errorMsg}`);
                 break;
               case 403:
-                toast.error(`无权限访问资源: ${errorMsg}`);
+                toast.error(`No permission to access resources: ${errorMsg}`);
                 break;
               case 404:
-                toast.error(`资源未找到: ${errorMsg}`);
+                toast.error(`Resource not found: ${errorMsg}`);
                 break;
               case 500:
-                toast.error(`服务器错误: ${errorMsg}`);
+                toast.error(`Server error: ${errorMsg}`);
                 break;
               case 401:
-                toast.error(`未授权: ${errorMsg}`);
+                toast.error(`Unauthorized: ${errorMsg}`);
                 break;
               default:
-                toast.error(`上传 ${file.name} 图片时出错: ${errorMsg}`);
+                toast.error(`Error uploading image ${file.name}: ${errorMsg}`);
             }
           }
         } catch (error) {
-          toast.error(`上传 ${file.name} 图片时出错`);
+          toast.error(`Error uploading image ${file.name}`);
         }
       }
 
       setUploadedFilesNum(uploadedFilesNum + successCount);
-      toast.success(`已成功上传 ${successCount} 张图片`);
+      toast.success(`${successCount} images uploaded successfully`);
 
     } catch (error) {
-      console.error('上传过程中出现错误:', error);
-      toast.error('上传错误');
+      console.error('An error occurred during upload:', error);
+      toast.error('Upload error');
     } finally {
       setUploading(false);
     }
@@ -303,10 +303,10 @@ export default function Home() {
   const handleCopy = async (text) => {
     try {
       await navigator.clipboard.writeText(text);
-      // alert('已成功复制到剪贴板');
-      toast.success(`链接复制成功`);
+      // alert('Successfully copied to clipboard');
+      toast.success(`Link copied successfully ✅`);
     } catch (err) {
-      toast.error("链接复制失败")
+      toast.error("Link copy failed ❌")
     }
   };
 
@@ -315,10 +315,10 @@ export default function Home() {
     const values = Array.from(codeElements).map(code => code.textContent);
     try {
       await navigator.clipboard.writeText(values.join("\n"));
-      toast.success(`链接复制成功`);
+      toast.success(`Link copied successfully ✅`);
 
     } catch (error) {
-      toast.error(`链接复制失败\n${error}`)
+      toast.error(`Link copy failed\n${error}`)
     }
   }
 
@@ -459,7 +459,7 @@ export default function Home() {
     if (!isAuthapi) {
       return (
         <Link href="/login">
-          <LoginButton>登录</LoginButton>
+          <LoginButton>Login</LoginButton>
         </Link>
       );
     }
@@ -475,7 +475,7 @@ export default function Home() {
       default:
         return (
           <Link href="/login">
-            <LoginButton>登录</LoginButton>
+            <LoginButton>Login</LoginButton>
           </Link>
         );
     }
