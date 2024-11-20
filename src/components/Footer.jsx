@@ -8,7 +8,12 @@ export default function Footer() {
            
 
         <a href="https://ip.im"><img src="https://ip.im/img" alt="My IP Address" width="215" height="70" /></a>
-        <a href="https://39mi.com" target="_blank" style="text-decoration:none; display:inline-flex; align-items:center; font-size:10px; color:#dedede;"> <img src="https://park.39mi.com/img/domainking.svg" style="margin-right:10px;"> <img src="https://park.39mi.com/img/tx.svg" height="auto" width="150" style="margin-right:10px;"> owner </a>
+        <a href="https://39mi.com" target="_blank" style={{ textDecoration: 'none', display: 'inline-flex', alignItems: 'center', fontSize: '10px', color: '#dedede' }}> 
+  <img src="https://park.39mi.com/img/domainking.svg" style={{ marginRight: '10px' }} /> 
+  <img src="https://park.39mi.com/img/tx.svg" height="auto" width="150" style={{ marginRight: '10px' }} /> 
+  owner 
+</a>
+
 
 
           
