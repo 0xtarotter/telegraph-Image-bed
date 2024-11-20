@@ -6,7 +6,8 @@ export default function Footer() {
 
     <footer>
 
-           Please comply with the laws and regulations of your country/region. This site makes no guarantees or guarantees.
+         <a href="https://39mi.com" target="_blank" style="text-decoration:none"><img src="https://park.39mi.com/img/by.svg" alt="Logo" height="auto" width="150"></a>
+     
 
     </footer>
   );
