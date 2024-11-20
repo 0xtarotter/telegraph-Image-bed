@@ -706,6 +706,8 @@ export default function Home() {
 
       )}
 
+    <a href="https://39mi.com" target="_blank" style="text-decoration:none"><img src="https://park.39mi.com/img/by.svg" alt="Logo" height="auto" width="150"></a>
+
       <div className="fixed inset-x-0 bottom-0 h-[50px] bg-slate-200  w-full  flex  z-50 justify-center items-center ">
         
         <Footer />
