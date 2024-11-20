@@ -508,10 +508,6 @@ export default function Home() {
               <option value="tgchannel">赛博菩萨API</option>
               <option value="r2">R2(2小时删除)</option>
             </select>
-
-                <a href="https://ip.im">
-            <img src="https://ip.im/img" alt="My IP Address" width="215" height="70" />
-          </a>
           </div>
 
 
@@ -579,6 +575,10 @@ export default function Home() {
                 <div className="text-gray-500">
 
                   Drag files here or copy and paste screenshots here to upload
+                  <br>
+              <a href="https://ip.im">
+            <img src="https://ip.im/img" alt="My IP Address" width="215" height="70" />
+          </a>
                 </div>
               </div>
             )}
