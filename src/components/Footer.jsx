@@ -12,7 +12,7 @@ export default function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           >
-          xxx
+          Thanks to Cloudflare Powered by love
           </Link> 
           </p>
       </div>
