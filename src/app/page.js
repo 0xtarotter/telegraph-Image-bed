@@ -485,31 +485,31 @@ export default function Home() {
   return (
     <main className=" overflow-auto h-full flex w-full min-h-screen flex-col items-center justify-between">
       <header className="fixed top-0 h-[50px] left-0 w-full border-b bg-white flex z-50 justify-center items-center">
-        <nav className="flex justify-between items-center w-full max-w-4xl px-4">图床</nav>
+        <nav className="flex justify-between items-center w-full max-w-4xl px-4">Free Picture bed</nav>
         {renderButton()}
       </header>
       <div className="mt-[60px] w-9/10 sm:w-9/10 md:w-9/10 lg:w-9/10 xl:w-3/5 2xl:w-2/3">
 
         <div className="flex flex-row">
           <div className="flex flex-col">
-            <div className="text-gray-800 text-lg">图片或视频上传
+            <div className="text-gray-800 text-lg">Image or video upload
             </div>
             <div className="mb-4 text-sm text-gray-500">
-              上传文件最大 5 MB;本站已托管 <span className="text-cyan-600">{Total}</span> 张图片; 你访问本站的IP是：<span className="text-cyan-600">{IP}</span>
+              The maximum upload file size is 5 MB; this site is hosted <span className="text-cyan-600">{Total}</span> pictures; The IP you use to access this site is：<span className="text-cyan-600">{IP}</span>
             </div>
           </div>
           <div className="flex  flex-col sm:flex-col   md:w-auto lg:flex-row xl:flex-row  2xl:flex-row  mx-auto items-center  ">
-            <span className=" text-lg sm:text-sm   md:text-sm lg:text-xl xl:text-xl  2xl:text-xl">上传接口：</span>
+            <span className=" text-lg sm:text-sm   md:text-sm lg:text-xl xl:text-xl  2xl:text-xl">API：</span>
             <select
               value={selectedOption} // 将选择框的值绑定到状态中的 selectedOption
               onChange={handleSelectChange} // 当选择框的值发生变化时触发 handleSelectChange 函数
               className="text-lg p-2 border  rounded text-center w-auto sm:w-auto md:w-auto lg:w-auto xl:w-auto  2xl:w-36">
-              <option value="tg" >TG(会失效)</option>
-              <option value="tgchannel">TG_Channel</option>
-              <option value="r2">R2</option>
-              <option value="vviptuangou">vviptuangou</option>
-              <option value="58img">58img</option>
-              <option value="tencent">tencent</option>
+              // <option value="tg" >TG(会失效)</option>
+              <option value="tgchannel">赛博菩萨API</option>
+              // <option value="r2">R2</option>
+              // <option value="vviptuangou">vviptuangou</option>
+              // <option value="58img">58img</option>
+              // <option value="tencent">tencent</option>
 
             </select>
           </div>
@@ -578,7 +578,7 @@ export default function Home() {
 
                 <div className="text-gray-500">
 
-                  拖拽文件到这里或将屏幕截图复制并粘贴到此处上传
+                  Drag files here or copy and paste screenshots here to upload
                 </div>
               </div>
             )}
@@ -592,7 +592,7 @@ export default function Home() {
               className="w-full h-10 bg-blue-500 cursor-pointer flex items-center justify-center text-white"
             >
               <FontAwesomeIcon icon={faImages} style={{ width: '20px', height: '20px' }} className="mr-2" />
-              选择图片
+              Select picture
             </label>
             <input
               id="file-upload"
@@ -604,7 +604,7 @@ export default function Home() {
           </div>
           <div className="md:col-span-5 col-span-8">
             <div className="w-full h-10 bg-slate-200 leading-10 px-4 text-center md:text-left">
-              已选择 {selectedFiles.length} 张，共 {getTotalSizeInMB(selectedFiles)} M
+              Selected {selectedFiles.length} piece，Total {getTotalSizeInMB(selectedFiles)} M
             </div>
           </div>
           <div className="md:col-span-1 col-span-3">
@@ -613,7 +613,7 @@ export default function Home() {
               onClick={handleClear}
             >
               <FontAwesomeIcon icon={faTrashAlt} style={{ width: '20px', height: '20px' }} className="mr-2" />
-              清除
+              Clear
             </div>
           </div>
           <div className="md:col-span-1 col-span-5">
@@ -624,7 +624,7 @@ export default function Home() {
               onClick={() => handleUpload()}
             >
               <FontAwesomeIcon icon={faUpload} style={{ width: '20px', height: '20px' }} className="mr-2" />
-              上传
+              Upload
             </div>
           </div>
         </div>
