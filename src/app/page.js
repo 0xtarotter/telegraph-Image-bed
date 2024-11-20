@@ -508,6 +508,10 @@ export default function Home() {
               <option value="tgchannel">赛博菩萨API</option>
               <option value="r2">R2(2小时删除)</option>
             </select>
+
+                <a href="https://ip.im">
+            <img src="https://ip.im/img" alt="My IP Address" width="215" height="70" />
+          </a>
           </div>
 
 
@@ -707,10 +711,6 @@ export default function Home() {
       )}
 
       <div className="fixed inset-x-0 bottom-0 h-[50px] bg-slate-200  w-full  flex  z-50 justify-center items-center ">
-      <center>
-        <a href="https://ip.im">
-            <img src="https://ip.im/img" alt="My IP Address" width="215" height="70" />
-          </a></center>
         
         <Footer />
       </div>
