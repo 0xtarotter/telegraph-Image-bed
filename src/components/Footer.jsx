@@ -5,14 +5,14 @@ export default function Footer() {
     <footer className="w-full  h-1/12 text-center  bg-slate-200  flex flex-col justify-center items-center">
       <div >
         <p className="text-xs text-gray-500">
-         
+          <img src="https://park.39mi.com/img/by.svg" />
           <Link 
           href="https://39mi.com"
           className="text-blue-300  hover:text-red-900 ml-1"
           target="_blank"
           rel="noopener noreferrer"
           >
-           <img src="https://park.39mi.com/img/by.svg" />
+          xxx
           </Link> 
           </p>
       </div>
