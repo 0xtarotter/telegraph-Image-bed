@@ -575,10 +575,6 @@ export default function Home() {
                 <div className="text-gray-500">
 
                   Drag files here or copy and paste screenshots here to upload
-                  <br>
-              <a href="https://ip.im">
-            <img src="https://ip.im/img" alt="My IP Address" width="215" height="70" />
-          </a>
                 </div>
               </div>
             )}
