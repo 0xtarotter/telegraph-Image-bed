@@ -2,10 +2,8 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 export default function Footer() {
   return (
-    <footer>
 
-           
-<div style={{
+    <div style={{
       display: 'flex', 
       justifyContent: 'center', 
       alignItems: 'center', 
@@ -16,6 +14,10 @@ export default function Footer() {
         <img src="https://park.39mi.com/img/by.png" alt="Logo" />
       </a>
     </div>
+    <footer>
+
+           
+
 
 
 
