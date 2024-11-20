@@ -7,10 +7,10 @@ export default function Footer() {
         
         <p className="text-xs text-gray-500">
            
-          <a href="https://39mi.com" target="_blank" style="text-decoration:none; display: inline-flex; align-items: center;"> 
-  <img src="https://park.39mi.com/img/domainking.svg" style="margin-right: 10px;" /> 
-  <img src="https://park.39mi.com/img/tx.svg" height="auto" width="150" /> 
-  <span style="font-size:10px;color:#dedede; margin-left: 10px;">owner</span> 
+          <a href="https://39mi.com" target="_blank" style={{ textDecoration: 'none' }}>
+  <img src="https://park.39mi.com/img/domainking.svg" />
+  <img src="https://park.39mi.com/img/tx.svg" height="auto" width="150" />
+  <span style={{ fontSize: '10px', color: '#dedede' }}>owner</span>
 </a>
 
 
