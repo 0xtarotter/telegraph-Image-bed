@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="text-xs text-gray-500">
            
 
-        <a href="https://ip.im"><img src="https://ip.im/img" alt="My IP Address" width="215" height="70" /></a>
+   
          <a href="https://39mi.com" target="_blank" style="text-decoration:none;">
           <img src="https://park.39mi.com/img/tx.svg">
             <br> 
