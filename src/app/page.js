@@ -485,7 +485,7 @@ export default function Home() {
   return (
     <main className=" overflow-auto h-full flex w-full min-h-screen flex-col items-center justify-between">
       <header className="fixed top-0 h-[50px] left-0 w-full border-b bg-white flex z-50 justify-center items-center">
-        <nav className="flex justify-between items-center w-full max-w-4xl px-4">Free Picture bed</nav>
+        <nav className="flex justify-between items-center w-full px-4">Free Picture bed</nav>
         {renderButton()}
       </header>
       <div className="mt-[60px] w-9/10 sm:w-9/10 md:w-9/10 lg:w-9/10 xl:w-3/5 2xl:w-2/3">
@@ -504,13 +504,9 @@ export default function Home() {
               value={selectedOption} // 将选择框的值绑定到状态中的 selectedOption
               onChange={handleSelectChange} // 当选择框的值发生变化时触发 handleSelectChange 函数
               className="text-lg p-2 border  rounded text-center w-auto sm:w-auto md:w-auto lg:w-auto xl:w-auto  2xl:w-36">
-              // <option value="tg" >TG(会失效)</option>
+              <option value="tg" >TG(会失效)</option>
               <option value="tgchannel">赛博菩萨API</option>
-              // <option value="r2">R2</option>
-              // <option value="vviptuangou">vviptuangou</option>
-              // <option value="58img">58img</option>
-              // <option value="tencent">tencent</option>
-
+              <option value="r2">R2(2小时删除)</option>
             </select>
           </div>
 
